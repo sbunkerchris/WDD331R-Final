@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+$breakpoint: 500px;
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
+body {font-family: Arial, Helvetica, sans-serif; color: #333; width: 95%; margin: auto;}
+
+nav { 
+    border-bottom:1px solid #d0d0d0; 
+    border-top: 1px solid #d0d0d0;
+    ul {
+        list-style-type: none; 
+        display: flex; 
+        flex-direction: column;
+        text-transform: uppercase; 
+        text-align: center;
+        @media (max-width: $breakpoint){
+           flex-direction: row; 
+           justify-content: right;
+        }
+    }
+    li { 
+        display: inline; 
+        padding: 10px;
+        @media (max-width: $breakpoint){
+            padding: 0px 10px 0px 10px;
+        }
+    }
+    a, a:visited { 
+        color: #666; 
+        text-decoration: none; 
+    }
+    a:active { 
+        color: #deb887; 
+    }
+    a:hover { 
+        color: #00ddff;
+    }
+}
+
+header {
+    a {
+        color: #333; 
+        text-decoration: none;
+    }
+    h1 {
+        text-align: center; 
+        font-weight: bold; 
+        font-size: 60px;
+    }
+}
+
+h2 {
+    a {
+        color:#666; 
+        text-decoration: none;
+    }
+}
+
+section {
+    a {
+        color: #666; 
+        text-decoration: none;
+    }
+}
+
+.post-date{
+    text-transform: uppercase; 
+    text-align: right; 
+    padding: 10px; 
+    border-bottom: 1px solid #d0d0d0; 
+    margin-top: 30px; 
+    font-weight: bold;
+    @media (max-width: $breakpoint){
+        width: 20%; 
+        height: 100%; 
+        border-bottom: none;
+    }
+}
+
+article {
+    border-bottom: 1px solid #d0d0d0;
+    p {
+        font-weight: bold;
+    }
+    article img {
+        margin: auto; 
+        width: 100%;
+    }
+    @media (max-width: $breakpoint){
+        display: flex; 
+        justify-content: space-around; 
+        border-bottom: none;
+    }
+}
+
+main{
+    @media(max-width: $breakpoint){
+        width: 95%; 
+        margin: 20px auto auto auto;
+    }
+}
+
+.post-content{
+    @media (max-width:$breakpoint){
+        width: 60%; 
+        height: 100%; 
+        border-bottom: 1px dashed #d0d0d0;
+        border-left: 1px solid #d0d0d0; 
+        padding: 10px;
+    }
+}

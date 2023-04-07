@@ -1,0 +1,34 @@
+.card-grid{
+    width: 80%;
+    margin: auto;
+}
+
+.row-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: calc(100% - 25px);
+}
+
+.col-grid{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    margin: 30px auto;
+}

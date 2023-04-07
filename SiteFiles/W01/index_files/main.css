@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
+body {font-family: Arial, Helvetica, sans-serif; color: #333; width: 95%; margin: auto;}
+
+nav { border-bottom:1px solid #d0d0d0; border-top: 1px solid #d0d0d0;}
+nav ul {list-style-type: none; display: flex; flex-direction: column;text-transform: uppercase; text-align: center;}
+nav li { display: inline; padding: 10px;}
+nav a, nav a:visited { color: #666; text-decoration: none; }
+nav a:active { color: #deb887; }
+nav a:hover { color: #00ddff;}
+
+header a {color: #333; text-decoration: none;}
+header h1 {text-align: center; font-weight: bold; font-size: 60px;}
+
+h2 a {color:#666; text-decoration: none;}
+section a {color: #666; text-decoration: none;}
+
+.post-date{text-transform: uppercase; text-align: right; padding: 10px; border-bottom: 1px solid #d0d0d0; margin-top: 30px; font-weight: bold;}
+
+article {border-bottom: 1px solid #d0d0d0;}
+article p {font-weight: bold;}
+article img { margin: auto; width: 100%;}
+
+/* media Queries */
+@media screen and (min-width: 500px){
+    nav ul {flex-direction: row; justify-content: right;}
+    nav li {padding: 0px 10px 0px 10px;}
+
+    main {width: 95%; margin: 20px auto auto auto;}
+    article {display: flex; justify-content: space-around; border-bottom: none;}
+
+    .post-date {width: 20%; height: 100%; border-bottom: none; }
+
+    .post-content{width: 60%; height: 100%; border-bottom: 1px dashed #d0d0d0;border-left: 1px solid #d0d0d0; padding: 10px;}
+}  
